@@ -8,6 +8,9 @@
         <requiredProperty key="version">
             <defaultValue>1.0.0-SNAPSHOT</defaultValue>
         </requiredProperty>
+        <requiredProperty key="parentVersion">
+            <defaultValue>${project.version}</defaultValue>
+        </requiredProperty>
     </requiredProperties>
 
     <fileSets>
