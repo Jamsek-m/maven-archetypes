@@ -38,6 +38,3 @@ kumuluzee:
       password: not_set
       pool:
         max-size: 20
-  security:
-    keycloak:
-      json: '{}'
