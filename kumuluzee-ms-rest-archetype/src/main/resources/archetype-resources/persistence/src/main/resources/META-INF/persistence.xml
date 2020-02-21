@@ -4,8 +4,6 @@
 
         <non-jta-data-source>jdbc/mainDB</non-jta-data-source>
 
-        <class>${package}.persistence.SampleEntity</class>
-
         <properties>
             <property name="hibernate.dialect" value="org.hibernate.dialect.PostgreSQL10Dialect"/>
             <property name="hibernate.hbm2ddl.auto" value="create-drop"/>
