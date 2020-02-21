@@ -56,15 +56,9 @@
         </fileSet>
         <fileSet filtered="true" encoding="UTF-8">
             <directory>api/v1/src/main/java/__packageInPathFormat__/api/endpoints</directory>
-            <includes>
-                <include>SampleEndpoint.java</include>
-            </includes>
         </fileSet>
         <fileSet filtered="true" encoding="UTF-8">
             <directory>api/v1/src/main/java/__packageInPathFormat__/api/mappers</directory>
-            <includes>
-                <include>SampleExceptionMapper.java</include>
-            </includes>
         </fileSet>
 
         <!-- SERVICES -->
@@ -82,21 +76,12 @@
         </fileSet>
         <fileSet filtered="true" encoding="UTF-8">
             <directory>services/src/main/java/__packageInPathFormat__/services</directory>
-            <includes>
-                <include>SampleService.java</include>
-            </includes>
         </fileSet>
         <fileSet filtered="true" encoding="UTF-8">
             <directory>services/src/main/java/__packageInPathFormat__/services/impl</directory>
-            <includes>
-                <include>SampleServiceImpl.java</include>
-            </includes>
         </fileSet>
         <fileSet filtered="true" encoding="UTF-8">
             <directory>services/src/main/java/__packageInPathFormat__/mappers</directory>
-            <includes>
-                <include>SampleMapper.java</include>
-            </includes>
         </fileSet>
         <fileSet filtered="true" encoding="UTF-8">
             <directory>services/src/main/java/__packageInPathFormat__/utils</directory>
@@ -123,15 +108,11 @@
         <fileSet filtered="true" encoding="UTF-8">
             <directory>lib/v1/src/main/java/__packageInPathFormat__/lib</directory>
             <includes>
-                <include>Sample.java</include>
                 <include>BaseType.java</include>
             </includes>
         </fileSet>
         <fileSet filtered="true" encoding="UTF-8">
             <directory>lib/v1/src/main/java/__packageInPathFormat__/lib/exceptions</directory>
-            <includes>
-                <include>SampleException.java</include>
-            </includes>
         </fileSet>
         <fileSet filtered="true" encoding="UTF-8">
             <directory>lib/v1/src/main/resources</directory>
@@ -152,10 +133,6 @@
         </fileSet>
         <fileSet filtered="true" encoding="UTF-8">
             <directory>persistence/src/main/java/__packageInPathFormat__/persistence</directory>
-            <includes>
-                <include>BaseEntity.java</include>
-                <include>SampleEntity.java</include>
-            </includes>
         </fileSet>
 
         <!-- OTHER -->
