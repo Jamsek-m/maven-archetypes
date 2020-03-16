@@ -51,11 +51,6 @@
             <groupId>com.fasterxml.jackson.core</groupId>
             <artifactId>jackson-annotations</artifactId>
         </dependency>
-
-        <dependency>
-            <groupId>com.mjamsek.auth</groupId>
-            <artifactId>kumuluzee-keycloak-integration-lib</artifactId>
-        </dependency>
     </dependencies>
 
 </project>
