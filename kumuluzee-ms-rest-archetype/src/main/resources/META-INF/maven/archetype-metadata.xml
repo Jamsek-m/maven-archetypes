@@ -137,6 +137,19 @@
                 <include>BaseEntity.java</include>
             </includes>
         </fileSet>
+        <fileSet filtered="true" encoding="UTF-8">
+            <directory>persistence/src/main/resources/db</directory>
+            <includes>
+                <include>main.properties</include>
+            </includes>
+        </fileSet>
+        <fileSet filtered="true" encoding="UTF-8">
+            <directory>persistence/src/main/resources/db/migrations</directory>
+            <includes>
+                <include>db.master.xml</include>
+                <include>db_setup_version.xml</include>
+            </includes>
+        </fileSet>
 
         <!-- OTHER -->
         <fileSet filtered="true" encoding="UTF-8">
