@@ -165,6 +165,12 @@
                 <include>Jenkinsfile</include>
             </includes>
         </fileSet>
+        <fileSet encoding="UTF-8" filtered="false">
+            <directory>docs</directory>
+            <includes>
+                <include>.gitkeep</include>
+            </includes>
+        </fileSet>
     </fileSets>
 
 </archetype-descriptor>
