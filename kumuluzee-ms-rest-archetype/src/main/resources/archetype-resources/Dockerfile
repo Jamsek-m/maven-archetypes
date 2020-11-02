@@ -1,4 +1,4 @@
-FROM adoptopenjdk/openjdk14:jre-14.0.2_12-alpine
+FROM openjdk:11-jre-slim
 
 ENV JAVA_ENV=PRODUCTION
 ENV KUMULUZEE_ENV_NAME=prod
