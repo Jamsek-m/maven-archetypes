@@ -4,13 +4,11 @@
 
     <parent>
         <groupId>${groupId}</groupId>
-        <artifactId>api</artifactId>
+        <artifactId>${artifactId}-v1</artifactId>
         <version>${version}</version>
     </parent>
 
-    <artifactId>api-v1</artifactId>
-
-    <name>api v1</name>
+    <artifactId>${artifactId}-api-v1</artifactId>
 
     <dependencies>
         <dependency>
@@ -52,11 +50,11 @@
         </dependency>
         <dependency>
             <groupId>com.kumuluz.ee.openapi</groupId>
-            <artifactId>kumuluzee-openapi</artifactId>
+            <artifactId>kumuluzee-openapi-mp</artifactId>
         </dependency>
         <dependency>
             <groupId>com.kumuluz.ee.openapi</groupId>
-            <artifactId>kumuluzee-openapi-ui</artifactId>
+            <artifactId>kumuluzee-openapi-mp-ui</artifactId>
         </dependency>
     </dependencies>
 
@@ -75,6 +73,16 @@
                         </goals>
                     </execution>
                 </executions>
+            </plugin>
+
+            <!-- SWAGGER UI -->
+            <plugin>
+                <groupId>com.googlecode.maven-download-plugin</groupId>
+                <artifactId>download-maven-plugin</artifactId>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-resources-plugin</artifactId>
             </plugin>
         </plugins>
     </build>

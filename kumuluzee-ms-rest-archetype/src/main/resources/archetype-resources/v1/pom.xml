@@ -8,13 +8,12 @@
         <version>${version}</version>
     </parent>
 
-    <artifactId>lib</artifactId>
+    <artifactId>${artifactId}-v1</artifactId>
 	<packaging>pom</packaging>
 
-    <name>lib</name>
-
     <modules>
-        <module>v1</module>
+        <module>lib</module>
+        <module>api</module>
     </modules>
 
 </project>

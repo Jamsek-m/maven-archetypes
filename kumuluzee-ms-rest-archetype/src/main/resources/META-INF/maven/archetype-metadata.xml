@@ -14,15 +14,12 @@
         <requiredProperty key="gitignore">
             <defaultValue>.gitignore</defaultValue>
         </requiredProperty>
-        <requiredProperty key="grpc">
-            <defaultValue>false</defaultValue>
-        </requiredProperty>
     </requiredProperties>
 
     <fileSets>
-        <!-- API -->
+        <!-- v1 -->
         <fileSet filtered="true" encoding="UTF-8">
-            <directory>api</directory>
+            <directory>v1</directory>
             <includes>
                 <include>pom.xml</include>
             </includes>
@@ -30,35 +27,35 @@
 
         <!-- API v1 -->
         <fileSet filtered="true" encoding="UTF-8">
-            <directory>api/v1</directory>
+            <directory>v1/api</directory>
             <includes>
                 <include>pom.xml</include>
             </includes>
         </fileSet>
         <fileSet filtered="true" encoding="UTF-8">
-            <directory>api/v1/src/main/resources</directory>
+            <directory>v1/api/src/main/resources</directory>
             <includes>
                 <include>config.yml</include>
                 <include>log4j2.xml</include>
             </includes>
         </fileSet>
         <fileSet filtered="true" encoding="UTF-8">
-            <directory>api/v1/src/main/resources/META-INF</directory>
+            <directory>v1/api/src/main/resources/META-INF</directory>
             <includes>
                 <include>beans.xml</include>
             </includes>
         </fileSet>
         <fileSet filtered="true" encoding="UTF-8">
-            <directory>api/v1/src/main/java/__packageInPathFormat__/api</directory>
+            <directory>v1/api/src/main/java/__packageInPathFormat__/api</directory>
             <includes>
                 <include>RestService.java</include>
             </includes>
         </fileSet>
         <fileSet filtered="true" encoding="UTF-8">
-            <directory>api/v1/src/main/java/__packageInPathFormat__/api/endpoints</directory>
+            <directory>v1/api/src/main/java/__packageInPathFormat__/api/endpoints</directory>
         </fileSet>
         <fileSet filtered="true" encoding="UTF-8">
-            <directory>api/v1/src/main/java/__packageInPathFormat__/api/mappers</directory>
+            <directory>v1/api/src/main/java/__packageInPathFormat__/api/mappers</directory>
         </fileSet>
 
         <!-- SERVICES -->
@@ -87,35 +84,27 @@
             <directory>services/src/main/java/__packageInPathFormat__/utils</directory>
         </fileSet>
 
-        <!-- LIB -->
-        <fileSet filtered="true" encoding="UTF-8">
-            <directory>lib</directory>
-            <includes>
-                <include>pom.xml</include>
-            </includes>
-        </fileSet>
-
         <!-- LIB v1 -->
         <fileSet filtered="true" encoding="UTF-8">
-            <directory>lib/v1</directory>
+            <directory>v1/lib</directory>
             <includes>
                 <include>pom.xml</include>
             </includes>
         </fileSet>
         <fileSet filtered="true" encoding="UTF-8">
-            <directory>lib/v1/src/main/java/__packageInPathFormat__/lib</directory>
+            <directory>v1/lib/src/main/java/__packageInPathFormat__/lib</directory>
         </fileSet>
         <fileSet filtered="true" encoding="UTF-8">
-            <directory>lib/v1/src/main/java/__packageInPathFormat__/lib</directory>
+            <directory>v1/lib/src/main/java/__packageInPathFormat__/lib</directory>
             <includes>
                 <include>BaseType.java</include>
             </includes>
         </fileSet>
         <fileSet filtered="true" encoding="UTF-8">
-            <directory>lib/v1/src/main/java/__packageInPathFormat__/lib/exceptions</directory>
+            <directory>v1/lib/src/main/java/__packageInPathFormat__/lib/exceptions</directory>
         </fileSet>
         <fileSet filtered="true" encoding="UTF-8">
-            <directory>lib/v1/src/main/resources</directory>
+            <directory>v1/lib/src/main/resources</directory>
         </fileSet>
 
         <!-- PERSISTENCE -->
