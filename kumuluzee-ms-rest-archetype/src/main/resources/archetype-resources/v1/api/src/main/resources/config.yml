@@ -7,15 +7,20 @@ kumuluzee:
   server:
     show-server-info: false
     base-url: http://localhost:8080
+    http:
+      port: 8080
   cors-filter:
     servlet:
       allow-origin: "*"
       supported-methods: "GET, POST, PUT, PATCH, DELETE, OPTIONS, HEAD"
       exposed-headers: "X-Total-Count"
-  openapi:
+  openapi-mp:
     enabled: true
+    servlet:
+      mapping: /openapi/specs
     ui:
       enabled: true
+      mapping: /openapi/ui
   logs:
     loggers:
       - name: ''
