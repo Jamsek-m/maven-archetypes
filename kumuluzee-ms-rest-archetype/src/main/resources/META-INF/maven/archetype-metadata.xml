@@ -52,6 +52,12 @@
             </includes>
         </fileSet>
         <fileSet filtered="true" encoding="UTF-8">
+            <directory>v1/api/src/main/java/__packageInPathFormat__/api/providers</directory>
+            <includes>
+                <include>ObjectMapperProvider.java</include>
+            </includes>
+        </fileSet>
+        <fileSet filtered="true" encoding="UTF-8">
             <directory>v1/api/src/main/java/__packageInPathFormat__/api/endpoints</directory>
         </fileSet>
         <fileSet filtered="true" encoding="UTF-8">
@@ -82,6 +88,13 @@
         </fileSet>
         <fileSet filtered="true" encoding="UTF-8">
             <directory>services/src/main/java/__packageInPathFormat__/utils</directory>
+        </fileSet>
+        <fileSet filtered="true" encoding="UTF-8">
+            <directory>services/src/main/java/__packageInPathFormat__/producers</directory>
+            <includes>
+                <include>PersistenceProducer.java</include>
+                <include>RequestProducer.java</include>
+            </includes>
         </fileSet>
 
         <!-- LIB v1 -->
