@@ -163,7 +163,6 @@
             <includes>
                 <include>Dockerfile</include>
                 <include>README.md</include>
-                <include>VERSION</include>
             </includes>
         </fileSet>
         <fileSet encoding="UTF-8">
