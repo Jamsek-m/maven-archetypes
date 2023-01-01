@@ -1,26 +1,37 @@
 package ${package}.lib;
 
-import java.util.Date;
+import java.time.Instant;
+import java.util.UUID;
 
 public class BaseType {
     
-    private String id;
+    private UUID id;
     
-    private Date timestamp;
-    
-    public String getId() {
+    private Instant createdAt;
+
+    private Instant updatedAt;
+
+    public UUID getId() {
         return id;
     }
     
-    public void setId(String id) {
+    public void setId(UUID id) {
         this.id = id;
     }
     
-    public Date getTimestamp() {
-        return timestamp;
+    public Instant getCreatedAt() {
+        return createdAt;
     }
     
-    public void setTimestamp(Date timestamp) {
-        this.timestamp = timestamp;
+    public void setCreatedAt(Instant createdAt) {
+        this.createdAt = createdAt;
+    }
+
+    public Instant getUpdatedAt() {
+        return updatedAt;
+    }
+
+    public void setUpdatedAt(Instant updatedAt) {
+        this.updatedAt = updatedAt;
     }
 }

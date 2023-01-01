@@ -3,7 +3,9 @@ package ${package}.persistence;
 import org.hibernate.annotations.GenericGenerator;
 
 import javax.persistence.*;
-import java.util.Date;
+import java.time.Instant;
+import java.time.OffsetDateTime;
+import java.util.UUID;
 
 @MappedSuperclass
 public class BaseEntity {
@@ -11,31 +13,48 @@ public class BaseEntity {
     @Id
     @GeneratedValue(generator = "uuid")
     @GenericGenerator(name = "uuid", strategy = "uuid2")
-    protected String id;
-    
-    @Temporal(TemporalType.TIMESTAMP)
-    @Column(name = "timestamp")
-    protected Date timestamp;
+    protected UUID id;
+
+    @Column(name = "created_at", columnDefinition = "TIMESTAMP WITH TIME ZONE", updatable = false)
+    protected OffsetDateTime createdAt;
+
+    @Column(name = "updated_at", columnDefinition = "TIMESTAMP WITH TIME ZONE")
+    protected OffsetDateTime updatedAt;
     
     @PrePersist
     private void onCreate() {
-        this.timestamp = new Date();
+        OffsetDateTime now = OffsetDateTime.now()
+        this.createdAt = now;
+        this.updatedAt = now;
     }
-    
-    public String getId() {
+
+    @PreUpdate
+    private void onUpdate() {
+        this.updatedAt = OffsetDateTime.now();
+    }
+
+    public UUID getId() {
         return id;
     }
-    
-    public void setId(String id) {
+
+    public void setId(UUID id) {
         this.id = id;
     }
-    
-    public Date getTimestamp() {
-        return timestamp;
+
+    public OffsetDateTime getCreatedAt() {
+        return createdAt;
     }
-    
-    public void setTimestamp(Date timestamp) {
-        this.timestamp = timestamp;
+
+    public void setCreatedAt(OffsetDateTime createdAt) {
+        this.createdAt = createdAt;
+    }
+
+    public OffsetDateTime getUpdatedAt() {
+        return updatedAt;
+    }
+
+    public void setUpdatedAt(OffsetDateTime updatedAt) {
+        this.updatedAt = updatedAt;
     }
     
 }

@@ -118,6 +118,12 @@
             </includes>
         </fileSet>
         <fileSet filtered="true" encoding="UTF-8">
+            <directory>v1/lib/src/main/java/__packageInPathFormat__/lib/constants</directory>
+            <includes>
+                <include>ZoneConstants.java</include>
+            </includes>
+        </fileSet>
+        <fileSet filtered="true" encoding="UTF-8">
             <directory>v1/lib/src/main/java/__packageInPathFormat__/lib/exceptions</directory>
         </fileSet>
         <fileSet filtered="true" encoding="UTF-8">
@@ -141,6 +147,12 @@
             <directory>persistence/src/main/java/__packageInPathFormat__/persistence</directory>
             <includes>
                 <include>BaseEntity.java</include>
+            </includes>
+        </fileSet>
+        <fileSet filtered="true" encoding="UTF-8">
+            <directory>persistence/src/main/java/__packageInPathFormat__/persistence/converters</directory>
+            <includes>
+                <include>UUIDAttrConverter.java</include>
             </includes>
         </fileSet>
         <fileSet filtered="true" encoding="UTF-8">
