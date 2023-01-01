@@ -15,17 +15,17 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 
         <kumuluzee.version>3.12.1</kumuluzee.version>
-        <kumuluzee-logs.version>1.4.2</kumuluzee-logs.version>
+        <kumuluzee-logs.version>1.4.6</kumuluzee-logs.version>
         <kumuluzee-rest.version>1.5.1</kumuluzee-rest.version>
         <kumuluzee-cors.version>1.0.6</kumuluzee-cors.version>
-        <kumuluzee-health.version>2.4.0</kumuluzee-health.version>
+        <kumuluzee-health.version>2.4.3</kumuluzee-health.version>
         <kumuluzee-rest-client.version>1.4.1.2</kumuluzee-rest-client.version>
         <kumuluzee-openapi-mp.version>1.4.0</kumuluzee-openapi-mp.version>
         <kumuluzee-config-mp.version>1.4.1</kumuluzee-config-mp.version>
 
         <swagger-ui.version>3.46.0</swagger-ui.version>
-        <jackson.version>2.12.3</jackson.version>
-        <postgres.version>42.2.21</postgres.version>
+        <jackson.version>2.12.6</jackson.version>
+        <postgres.version>42.4.0</postgres.version>
 
         <maven-resources-plugin.version>3.1.0</maven-resources-plugin.version>
         <download-maven-plugin.version>1.4.2</download-maven-plugin.version>
