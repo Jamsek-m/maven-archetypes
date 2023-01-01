@@ -23,7 +23,7 @@ public class BaseEntity {
     
     @PrePersist
     private void onCreate() {
-        OffsetDateTime now = OffsetDateTime.now()
+        OffsetDateTime now = OffsetDateTime.now();
         this.createdAt = now;
         this.updatedAt = now;
     }
